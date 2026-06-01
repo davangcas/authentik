@@ -48,7 +48,7 @@ services:
       - authentik-media:/media
       - authentik-templates:/templates
     ports:
-      - "9000:9000"
+      - "127.0.0.1:9000:9000"
     depends_on:
       authentik-db:
         condition: service_healthy
